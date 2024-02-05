@@ -1,0 +1,6 @@
+#stages:
+#  - build
+#  - test
+#before_script:
+#
+#build:
