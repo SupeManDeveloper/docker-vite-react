@@ -2,6 +2,8 @@ name: GitlabSync
 
 on:
   - push
+      branches:
+        - develop
   - delete
 
 jobs:
