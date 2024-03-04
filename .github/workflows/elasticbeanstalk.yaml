@@ -39,7 +39,7 @@ jobs:
           environment_name: Ebreactvite-env
           version_label: "app-${{ steps.format-time.outputs.replaced }}"
           region: ap-southeast-2
-          deployment_package: eb_react_vite.zip
+          deployment_package: reactvitefrontend.zip
 
       - name: Deployed!
         run: echo App deployed to ELB
