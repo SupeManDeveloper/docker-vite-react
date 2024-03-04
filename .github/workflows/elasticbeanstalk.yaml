@@ -35,11 +35,11 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: eb_react_vite
-          environment_name: Ebreactvite-env
+          application_name: demo_eb
+          environment_name: Demoeb-env
           version_label: "app-${{ steps.format-time.outputs.replaced }}"
           region: ap-southeast-2
-          deployment_package: reactvitefrontend.zip
+          deployment_package: demotest.zip
 
       - name: Deployed!
         run: echo App deployed to ELB
