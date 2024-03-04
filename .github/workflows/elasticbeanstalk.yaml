@@ -37,7 +37,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: demo_eb
           environment_name: Demoeb-env
-          version_label: 2
+          version_label: "app-${{ steps.format-time.outputs.replaced }}"
           region: ap-southeast-2
           deployment_package: demotest.zip
 
